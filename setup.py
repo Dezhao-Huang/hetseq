@@ -34,6 +34,8 @@ extensions = [
 ]
 
 
+cmdclass = {}
+
 setup(
     name='hetseq',
     version='0.0.1',
@@ -52,4 +54,8 @@ setup(
     packages=find_packages(exclude=[]),
     ext_modules=extensions,
     zip_safe=False,
+    include_package_data=True,
+    long_description="README.md",
+    long_description_content_type="text/markdown",
+    cmdclass = cmdclass,
 )
